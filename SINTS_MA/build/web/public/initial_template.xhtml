@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <h:outputScript library="jquery" name="jquery-2.1.4.min.js" />
+        <h:outputScript library="jquery-ui" name="jquery-ui.min.js" />
+        <h:outputStylesheet library="jquery-ui" name="jquery-ui.min.css" />
+        <h:outputStylesheet library="bootstrap/css" name="bootstrap.min.css" />
+        <h:outputStylesheet library="bootstrap/css" name="bootstrap-theme.min.css" />
+        <h:outputStylesheet library="font-awesome-4.4.0/css" name="font-awesome.css" />
+        <h:outputStylesheet library="css/kendo" name="kendo.common.min.css" />
+        <h:outputStylesheet library="css/kendo" name="kendo.default.min.css" />        
+        <h:outputStylesheet library="css/kendo" name="kendo.rtl.min.css" />
+        <h:outputStylesheet library="bootstrap/bootstrap-lightbox" name="bootstrap-lightbox.css" />
+        <h:outputScript library="bootstrap/js" name="bootstrap.min.js" />
+        <h:outputScript library="bootstrap/bootstrap-lightbox" name="bootstrap-lightbox.js" />
+        <h:outputScript library="js" name="kendo.all.min.js" />
+        <h:outputScript library="js" name="nicEdit.js" />
+        <h:outputScript library="js" name="dashboard.js" />
+        <h:outputScript library="js" name="html2canvas.js" />
+        <h:outputScript library="js/jsPDF" name="jspdf.js" />
+        <h:outputScript library="js/jsPDF/plugins" name="addhtml.js" />
+        <h:outputScript library="js/jsPDF/plugins" name="addimage.js" />
+        <h:outputScript library="js/jsPDF/plugins" name="split_text_to_size.js" />
+        <h:outputScript library="js/jsPDF/plugins" name="standard_fonts_metrics.js" />
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/dt/dt-1.10.9/datatables.min.css"/> 
+        <script type="text/javascript" src="https://cdn.datatables.net/r/dt/dt-1.10.9/datatables.min.js"></script>
+        <script type="text/javascript" src="//cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.9/js/dataTables.bootstrap.min.js"></script>
+        
+        
+    </h:head>
+    <h:body>
+        <div>
+            <ui:insert name="nav_bar">
+            </ui:insert>
+        </div>
+        <div>
+            <ui:insert name="nav_bar_side">
+            </ui:insert>
+        </div>
+        <div class="container">
+            <ui:insert name="container">
+
+            </ui:insert>
+        </div>    
+<!--        <div id="footer" style="padding-top:30px; margin-top:90px; width:100%; background-color: #EEEEEE;" role="footer">
+            <ui:insert name="nav_footer">
+                <ui:include src="footer.xhtml" />
+            </ui:insert>
+        </div>    -->
+    </h:body>
+</html>
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <h:outputStylesheet library="css" name="sidebar_custom.css"/>
+    </h:head>
+    
+    <h:body>
+        <div class="wrapper col-md-2" style="margin-right: 25px;">
+            <div class="row">
+                <div id="sidebar-wrapper" class="col-md-12">
+                    <div class="row">
+                        <div class="sidebar-brand" style="padding-left: 18%">
+                            <h:graphicImage class="embed-responsive-item" value="/resources/img/logomarcaoficial.png" width="140" height="120"/>
+                        </div>
+                        <!--Search bar-->
+                        <div class="search-section" style="padding: 10px;">
+                            <h:form>
+                                <div class="input-group">
+                                    <h:inputText value="Buscar" styleClass="form-control" pt:placeholder="Buscar"/>
+                                    <span class="input-group-btn">
+                                        <button name="j_idt55:j_idt59" value="" class="btn btn-default" type="submit">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </h:form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--Menu List-->
+                        <ul class="nav nav-second-level list-group col-md-12">
+                            <h:form>
+                                <li class="list-group-item">
+                                    <!--<i class="fa fa-calendar"></i>-->
+                                    <h:commandLink 
+                                         class="link-agenda fa fa-calendar"
+                                         value=" Agenda"
+                                         action="#"
+                                        role="button">
+                                    </h:commandLink>
+                                </li>
+                                <li class="list-group-item dropdown">
+                                    <h:commandLink 
+                                         class="link-formularios fa fa-list-alt"
+                                         value=" Formulários"
+                                         action="#"
+                                        role="button">
+                                    </h:commandLink>
+                                </li>
+                                <li class="list-group-item">
+                                    <h:commandLink 
+                                         class="link-controle fa fa-wrench"
+                                         value=" Controle"
+                                         action="#"
+                                        role="button">
+                                    </h:commandLink>
+                                </li>
+                                <li class="list-group-item">
+                                    <h:commandLink 
+                                         class="link-telessaude fa fa-desktop"
+                                         value=" Telessaúde"
+                                         action="#"
+                                        role="button">
+                                    </h:commandLink>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" id="btn-menu-documento" class="fa fa-file-o">
+                                        Ofícios/Memos                                        
+                                    </a>                                    
+                                    <ul id="documento-submenu" class="nav" style="display: none">
+                                        <li>
+                                            <h:commandLink 
+                                                class="link-criar"
+                                                value="Criar"
+                                                action="#{documentoOficialController.prepareCreate()}"
+                                                role="button">
+                                            </h:commandLink>
+                                        </li>
+                                        <li>
+                                            <h:link 
+                                                class="link-visualizar"
+                                                value="Visualizar"
+                                                outcome="/documentoOficial/view_list"
+                                                role="button">
+                                            </h:link>
+                                        </li>
+                                    </ul>                       
+                                </li>
+                            </h:form>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+        </div>  
+    </h:body>
+</html>

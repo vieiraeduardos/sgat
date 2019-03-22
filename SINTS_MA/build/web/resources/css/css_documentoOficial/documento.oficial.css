@@ -1,0 +1,83 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+ 
+    Created on : 09/10/2015, 11:05:10
+    Author     : HUUFMA
+*/
+
+.doc-tipo
+{
+    margin: 10px;
+}
+
+.doc-tipo td
+{
+    color:#505050;
+    margin: 3px;
+    background-color: #F0F0F0 ;
+    padding: 5px;
+}
+
+.doc-tipo td:hover
+{
+    background-color: #B8B8B8;
+}
+
+.doc-tipo tr
+{
+    border: 1px solid #E0E0E0 ;
+    border-radius: 10px;
+}
+
+.doc-tipo input[type=radio]
+{
+    color: black;
+    border-radius: 10px;
+}
+
+.doc-tipo label
+{
+    margin-left: 5px;
+}
+
+.table{
+    color: #505050;
+    
+}
+
+.table td
+{
+    border: 0px;
+}/*
+
+*/.table th{
+    border-bottom: 1px solid #B8B8B8;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 1px solid #E0E0E0;
+}
+
+.column_filter,
+.doc-form-input{
+    width: 80%;
+    border-radius: 3px;
+    border: 1px solid #B8B8B8;
+}
+
+.column_filter:focus,
+.doc-form-input:focus{
+  box-shadow: 0 0 4px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.panel-heading{
+    background-color: #E0E0E0;
+}
+
+/*.k-table
+{
+    border: 1px solid black;
+}*/

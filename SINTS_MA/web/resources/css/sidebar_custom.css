@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28/09/2015, 10:03:05
+    Author     : HUUFMA
+*/
+/*ul[class="nav"]{
+    list-style-type: none;
+}*/
+
+.sublist-item
+{
+    color: blue;
+    padding: 0px;
+    margin: 0px;
+}
+
+#sidebar-wrapper{
+    margin-left: 14px;
+    height: 500px;
+    border-right: 1px solid #F0F0F0;
+}
+

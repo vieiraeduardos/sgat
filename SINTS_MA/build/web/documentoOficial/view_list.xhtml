@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <h:outputStylesheet library="bootstrap/css" name="container_custom.css" />
+    </h:head>
+    <ui:composition template="../public/initial_template.xhtml">
+        <ui:define name="nav_bar">
+            <ui:include src="../public/top_bar.xhtml"/>
+            <ui:include src="../public/search_bar.xhtml"/>
+        </ui:define>
+        <ui:define name="nav_bar_side">
+            <ui:include src="../public/side_bar.xhtml"/>
+        </ui:define>   
+        <ui:define name="container">
+            <div class="row">
+                <div class="col-md-10 wrapper" id="doc-menu-container" style="float: left;">
+                    <ui:include src="List.xhtml"/>
+                </div>
+            </div>
+        </ui:define>    
+        <ui:define name="title">        
+            #{bundle.SystemName} - Ofícios/Memos   
+        </ui:define>
+    </ui:composition>
+</html>
